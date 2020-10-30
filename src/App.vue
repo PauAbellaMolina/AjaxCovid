@@ -115,7 +115,7 @@ export default {
     },
     async fetch() {
       console.log("fetching")
-      const res = await fetch(`https://cors-anywhere.herokuapp.com/https://opendata.ecdc.europa.eu/covid19/casedistribution/json/`);
+      const res = await fetch(`https://opendata.ecdc.europa.eu/covid19/casedistribution/json/`);
       let data = await res.json();
       data = data["records"];
 
@@ -124,7 +124,7 @@ export default {
         return data[key]
       })
 
-      const resRecompte = await fetch(`https://cors-anywhere.herokuapp.com/https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=json`);
+      const resRecompte = await fetch(`https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=json`);
       let dataRecompte = await resRecompte.json();
       dataRecompte = dataRecompte["features"];
 
