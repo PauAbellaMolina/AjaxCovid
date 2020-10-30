@@ -1,24 +1,5 @@
-# ajax-covid
+# M6-UF4-NF2-A5
 
-## Project setup
-```
-npm install
-```
+Aplicació web Vue per obtenir estadístiques del COVID19 d'APIs de manera asíncrona.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[covid.pauabella.dev](https://covid.pauabella.dev "Take a look")
