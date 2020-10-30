@@ -137,7 +137,7 @@ export default {
       console.log("fetched");
     },
     async fetchPaisos() {
-      const res = await fetch(`http://covid.codifi.cat/countries.php?country=`+this.paisInput);
+      const res = await fetch(`https://cors-anywhere.herokuapp.com/http://covid.codifi.cat/countries.php?country=`+this.paisInput);
       let data = await res.json();
       this.paisosSugerits = data;
     }
