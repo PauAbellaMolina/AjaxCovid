@@ -10,7 +10,7 @@
 			<div class="row py-3">
 				<div id="content" class="col-lg-12">
 					<div class="form-inline">
-						<div class="input-group input-group-sm">
+						<div class="input-group">
 							<input class="search_query form-control" type="text" name="key" id="key" autocomplete="off" placeholder="Cercar..." v-model="paisInput" @input="handleBusquedaPais" @keyup.enter="handlePaisInput">
 							<span class="input-group-btn">
 								<button class="btn btn-info btn-flat disabled" v-on:click="handlePaisInput"><i class="fa fa-search"></i></button>
