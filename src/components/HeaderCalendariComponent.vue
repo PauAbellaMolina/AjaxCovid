@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body elem-mid">
-                        <h4 class="card-text text-center" id="current_date">{{this.data}}</h4>
+                        <h4 class="card-text text-center" id="current_date">{{this.data}}</h4> <!-- Mostrem la varible data rebuda per props -->
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
 <script>
   export default {
     props: {
-      data: String,
+      data: String, //Definim que rebrem per props una dada de tipus String
     }
   }
 </script>

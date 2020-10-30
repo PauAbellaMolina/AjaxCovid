@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body elem-mid">
-                        <h2 class="card-text text-center" id="current_deaths">{{ this.morts }}</h2>
+                        <h2 class="card-text text-center" id="current_deaths">{{ this.morts }}</h2> <!-- Mostrem la varible morts rebuda per props -->
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
 <script>
   export default {
     props: {
-      morts: Number,
+      morts: Number, //Definim que rebrem per props una dada de tipus Number
     }
   }
 </script>
